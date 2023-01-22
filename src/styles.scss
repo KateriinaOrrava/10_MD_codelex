@@ -1,0 +1,93 @@
+
+
+
+.d-none{
+  display:none;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color:#9e9a9a;
+  font-weight: 900;
+  font-size: 4em;
+  padding:0px 0px;
+}
+h2{
+  font-size: 2em;
+  padding:0px;
+}
+p{
+font-size: 1.5em;
+}
+.section {
+  padding:10px 20px;
+}
+.container{
+  background-color:#fce467 ;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  border-radius: 10px;
+max-width: 70%;
+margin:20px;
+}
+.card-container{
+  display:grid;
+  justify-content: space-evenly;
+  align-items: stretch;
+  grid-template-columns: repeat(2, 400px);
+  border-radius: 10px;
+  grid-gap:20px;
+  padding:10px 10px;
+}
+.taskCard__Wrapper{
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+.taskCard__Wrapper:hover{
+  background-color: #f1eded;
+}
+.card-wrapper{
+  display: flex;
+  align-items: stretch;
+  flex-direction:column;
+}
+.btn-section{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  min-width: 80%;
+}
+.action-btn{
+  width: 90%;
+}
+button{
+  color:black;
+  padding: 4%;
+  border:none;
+  border-radius: 10px;
+  font-size: 1.3em;
+  min-width: 90%;
+  background-color: #fce467;
+
+}
+button:hover{
+  opacity:0.5
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding-bottom: 20%;
+  gap: 10px
+}
+
+#msg1, #msg2 {
+  color:red
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="CRUD-heading">SIMPLE CRUD APP</h1>
+        <div id="card-container" class="card-container">
+
+        </div>
+        <!---->
+        <!-- <div class="block js-to-do-list">
+           <h1>TO DO List</h1>
+            <pre></pre>
+        </div>
+        <div class="js-add-to-do-task">
+            <button>
+                Add one TO DO task list
+            </button>
+            <pre></pre>
+        </div>
+
+        <div class="js-edit-to-do-task">
+            <button>
+                Edit TO DO task
+            </button>
+            <pre></pre>
+        </div>
+
+        <div class="js-delete-to-do-task">
+            <button>
+                Delete TO DO task
+            </button>
+            <pre></pre>
+        </div> -->
+        <!---->
+        <div class="form-container">
+            <input class="input" id="new-task-name" type="text" placeholder="Add name of new task" required>
+            <div id="msg1"></div>
+            <textarea class="textarea" id="new-task-description" placeholder="Add description of new task" required></textarea>
+            <div id="msg2"></div>
+            <input class="button add-new-task" id="new-task-submit" type="submit" value="Submit new task">
+        </div>
+
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
