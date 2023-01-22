@@ -6,7 +6,7 @@ type TODO = {
   name: string;
   description: string;
 }
-// function, that generates cards for things to do
+
 function generateCards(res: TODO[]) {
   const cardContainer = document.querySelector<HTMLDivElement | null>('#card-container');
   res.forEach((task) => {
@@ -36,9 +36,9 @@ function generateCards(res: TODO[]) {
                     </div>
                     <div class="section edit-form-section-${task.id} d-none">
                             <input class="input" id="edit-task-name-${task.id}" type="text" placeholder="Edit task name" required>
-                            <div id="msg3"></div>
+                            <div class="validation-error" id="msg3"></div>
                             <textarea class="textarea" id="edit-task-description-${task.id}" placeholder="Edit task description" required></textarea>
-                            <div id="msg4"></div>
+                            <div class="validation-error" id="msg4"></div>
                             <input class="button edit-new-task" id="edit-task-submit-${task.id}" type="submit" value="Update task">
                             </div>
                     </div>
@@ -91,16 +91,6 @@ function generateCards(res: TODO[]) {
       }
     });
   });
-// console.log(editTaskName);
-//   const editTaskButtons = document.querySelectorAll<HTMLButtonElement | null>('.edit-task');
-//   const TaskHeaders = document.querySelectorAll<HTMLHeadingElement | null>('h2');
-//   res.forEach((task) => {
-//     editTaskButtons[task.id].addEventListener('click', () => {
-//       TaskHeaders[task.id].innerHTML = 'book';
-//
-//       window.location.reload();
-//     });
-//   });
 }
 
 // šī koda daļa saņem DATA no API un tad nosūta to funkcijai, kas izveido kartiņas
@@ -109,7 +99,6 @@ axios.get<TODO[]>('http://localhost:3004/Funny_TO_DO')
     generateCards(data);
   });
 
-// šī koda daļa saņem informāciju no form un tad  izveido kartiņas
 const addNewTaskHeading = document.querySelector<HTMLFormElement | null>('.input');
 const addNewTaskDescription = document.querySelector<HTMLFormElement | null>('.textarea');
 const addNewTaskButton = document.querySelector<HTMLButtonElement | null>('.add-new-task');
